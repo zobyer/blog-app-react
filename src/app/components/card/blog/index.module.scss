@@ -3,6 +3,7 @@
 .blogCard {
   aspect-ratio: 1/1;
   position: relative;
+  margin: 0.5rem;
 }
 
 .infoContainer {
@@ -11,7 +12,7 @@
   bottom: 2.5rem;
 }
 
-.heading {
+.category {
   color: $color-orange-1;
   font-size: 1.125rem;
 }

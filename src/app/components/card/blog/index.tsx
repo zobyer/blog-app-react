@@ -1,7 +1,14 @@
 import React from "react";
 import Styles from "./index.module.scss";
+import { Blog as BlogProps } from "./index.type";
 
-const BlogCard = () => {
+const BlogCard: React.FC<BlogProps> = ({
+  category,
+  title,
+  postedBy,
+  date,
+  noOfComments,
+}) => {
   return (
     <div
       style={{
@@ -11,12 +18,12 @@ const BlogCard = () => {
       className={Styles.blogCard}
     >
       <div className={Styles.infoContainer}>
-        <h6 className={Styles.heading}>Fashion</h6>
-        <h4 className={Styles.title}>Morbi dapibus condimentum</h4>
+        <h6 className={`text-uppercase ${Styles.category}`}>{category}</h6>
+        <h4 className={`text-capitalize ${Styles.title}`}>{title}</h4>
         <p className={Styles.othersInfo}>
-          <span>Admin</span>
-          <span>May 12, 2022</span>
-          <span>comments</span>
+          <span>{postedBy}</span>
+          <span>{date}</span>
+          <span>{noOfComments} comments</span>
         </p>
       </div>
     </div>
