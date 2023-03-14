@@ -1,6 +1,6 @@
 import React from "react";
 import LayOut from "app/components/layout";
-import BlogCard from "app/components/card/blog";
+import BlogCard from "app/components/card/blog/square";
 
 function HomePage() {
   return (
