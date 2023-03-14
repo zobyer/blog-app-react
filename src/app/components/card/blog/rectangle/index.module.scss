@@ -1,0 +1,14 @@
+@use "../../../../../styles//base.scss" as *;
+
+.blogContainer {
+  border: 1px solid $color-grey-2;
+  padding: 2.5rem;
+
+  .blogBannerImage {
+    width: 100%;
+    aspect-ratio: 365/161;
+  }
+
+  .informationContainer {
+  }
+}
