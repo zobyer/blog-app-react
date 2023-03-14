@@ -1,0 +1,40 @@
+@use "../../../../styles/base.scss" as *;
+
+.blogCard {
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.infoContainer {
+  position: absolute;
+  left: 2.5rem;
+  bottom: 2.5rem;
+}
+
+.heading {
+  color: $color-orange-1;
+  font-size: 1.125rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: $color-white-1;
+  margin-top: 0.625rem;
+  margin-bottom: 0.75rem;
+}
+
+.othersInfo {
+  color: $color-white-1;
+
+  span {
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid $color-white-1;
+  }
+
+  span:last-child {
+    border-right: none;
+    padding: 0;
+    margin: 0;
+  }
+}
