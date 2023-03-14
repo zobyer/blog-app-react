@@ -1,0 +1,45 @@
+@use "../../../../styles/base.scss" as *;
+
+.container {
+  background-color: $color-black-2;
+  margin-top: 100px;
+  padding: 30px 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-bottom: 60px;
+    margin: 0 auto 60px auto;
+    border-bottom: 1px solid $color-white-1;
+
+    li {
+      color: $color-white-1;
+      margin-right: 30px;
+      padding: 0 30px;
+      text-decoration: none;
+
+      border-right: 1px solid $color-white-1;
+      margin: 30px 0;
+
+      .redirectLink {
+        color: $color-white-1;
+      }
+
+      .redirectLink:hover {
+        color: $color-orange-1;
+      }
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+  }
+
+  .copyrightText {
+    color: $color-white-1;
+    text-align: center;
+    font-size: 13px;
+  }
+}
