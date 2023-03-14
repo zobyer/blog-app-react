@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import ToggleIcon from "app/components/icons/ToggleIcon";
+import ToggleIcon from "app/components/icons/toggle-icon";
 import Styles from "./index.module.scss";
 import { menus } from "utils/const/layout";
 import RedirectLink from "app/components/redirect-link";
