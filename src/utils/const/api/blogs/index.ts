@@ -1,0 +1,38 @@
+export const blogs = [
+  {
+    id: "blog#1",
+    category: "fashion",
+    title: "Morbi dapibus condimentum",
+    postedBy: "Admin",
+    date: "May 12, 2022",
+    noOfComments: 5,
+    slug: "/tech",
+  },
+  {
+    id: "blog#1",
+    category: "tech",
+    title: "Morbi dapibus condimentum",
+    postedBy: "Admin",
+    date: "May 12, 2022",
+    noOfComments: 2,
+    slug: "/",
+  },
+  {
+    id: "blog#1",
+    category: "tech",
+    title: "Morbi dapibus condimentum",
+    postedBy: "Admin",
+    date: "May 12, 2022",
+    noOfComments: 8,
+    slug: "/",
+  },
+  {
+    id: "blog#1",
+    category: "Entertainment",
+    title: "Morbi dapibus condimentum",
+    postedBy: "Admin",
+    date: "May 12, 2022",
+    noOfComments: 22,
+    slug: "/",
+  },
+];
