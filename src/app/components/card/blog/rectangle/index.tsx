@@ -12,7 +12,24 @@ const RectangleBlogCard = () => {
         className={Styles.blogBannerImage}
       />
 
-      <div className={Styles.informationContainer}></div>
+      <div className={Styles.informationContainer}>
+        <h4 className={`text-uppercase ${Styles.category}`}>Lifestyle</h4>
+        <h3 className={Styles.title}>Best Template Website for HTML CSS</h3>
+
+        <p className={Styles.othersInfo}>
+          <span>Admin</span>
+          <span>May 31, 2022</span>
+          <span>12 Comments</span>
+        </p>
+
+        <p className={Styles.blogDetails}>
+          Stand Blog is a free HTML CSS template for your CMS theme. You can
+          easily adapt or customize it for any kind of CMS or website builder.
+          You are allowed to use it for your business. You are NOT allowed to
+          re-distribute the template ZIP file on any template collection site
+          for the download
+        </p>
+      </div>
     </div>
   );
 };
