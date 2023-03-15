@@ -1,3 +1,4 @@
+import RedirectLink from "app/components/redirect-link";
 import React from "react";
 
 import Styles from "./index.module.scss";
@@ -13,8 +14,10 @@ const RectangleBlogCard = () => {
       />
 
       <div className={Styles.informationContainer}>
-        <h4 className={`text-uppercase ${Styles.category}`}>Lifestyle</h4>
-        <h3 className={Styles.title}>Best Template Website for HTML CSS</h3>
+        <RedirectLink path="/">
+          <h4 className={`text-uppercase ${Styles.category}`}>Lifestyle</h4>
+          <h3 className={Styles.title}>Best Template Website for HTML CSS</h3>
+        </RedirectLink>
 
         <p className={Styles.othersInfo}>
           <span>Admin</span>
