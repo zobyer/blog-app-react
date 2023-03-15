@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <>
       <LayOut>
-        <div className="container">
+        <div className="container mx-auto">
           <HomePageContainer />
         </div>
       </LayOut>

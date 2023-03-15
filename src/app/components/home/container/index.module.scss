@@ -1,3 +1,13 @@
-.leftContainer {
-  width: 50%;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.25rem;
+
+  .leftContainer {
+    width: 60%;
+  }
+
+  .rightContainer {
+    width: 30%;
+  }
 }
