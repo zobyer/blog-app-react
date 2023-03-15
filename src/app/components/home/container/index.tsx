@@ -3,6 +3,7 @@ import React from "react";
 import Styles from "./index.module.scss";
 import RectangleBlogCard from "app/components/card/blog/rectangle";
 import TextInputFields from "app/components/input-fields/text";
+import RecentPostContainer from "../recent-post";
 
 const HomePageContainer = () => {
   return (
@@ -11,7 +12,11 @@ const HomePageContainer = () => {
         <RectangleBlogCard />
       </div>
       <div className={Styles.rightContainer}>
-        <TextInputFields />
+        <TextInputFields
+          styledClassName={`text-uppercase ${Styles.searchTextField}`}
+        />
+
+        <RecentPostContainer />
       </div>
     </div>
   );
