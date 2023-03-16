@@ -1,0 +1,7 @@
+@use "../../../../styles/base.scss" as *;
+
+.textInput {
+  border: 1px solid $color-grey-2;
+  height: 3.125rem;
+  width: 100%;
+}

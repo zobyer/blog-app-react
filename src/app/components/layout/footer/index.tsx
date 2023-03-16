@@ -10,11 +10,9 @@ const Footer: React.FC = () => {
       <ul className="container">
         {socialLinks.map((socialLink) => (
           <li key={socialLink.id} className="text-uppercase">
-            <RedirectLink
-              name={socialLink.name}
-              path="/"
-              styledClasses={Styles.redirectLink}
-            />
+            <RedirectLink path="/" styledClasses={Styles.redirectLink}>
+              {socialLink.name}
+            </RedirectLink>
           </li>
         ))}
       </ul>

@@ -19,7 +19,9 @@ const TopBar: React.FC = () => {
   return (
     <nav className={Styles.navbar}>
       <div className={`container relative ${Styles.container}`}>
-        <RedirectLink name={<AppHeadingName />} path="" />
+        <RedirectLink path="">
+          <AppHeadingName />
+        </RedirectLink>
         <div>
           <ul
             className={`${Styles.navbarCollapse} ${
@@ -29,10 +31,11 @@ const TopBar: React.FC = () => {
             {menus.map((menu) => (
               <li key={menu.id} className="text-capitalize">
                 <RedirectLink
-                  name={menu.name}
                   path={menu.redirectLink}
                   styledClasses={Styles.redirectLink}
-                />
+                >
+                  {menu.name}
+                </RedirectLink>
               </li>
             ))}
           </ul>

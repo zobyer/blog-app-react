@@ -23,6 +23,10 @@ h6 {
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 .container {
   width: 80%;
 }

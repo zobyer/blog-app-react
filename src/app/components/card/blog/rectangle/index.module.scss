@@ -1,0 +1,52 @@
+@use "../../../../../styles//base.scss" as *;
+
+.blogContainer {
+  border: 1px solid $color-grey-2;
+
+  .blogBannerImage {
+    width: 100%;
+    aspect-ratio: 365/161;
+  }
+
+  .informationContainer {
+    padding: 2.5rem;
+  }
+
+  .category {
+    color: $color-orange-1;
+    font-size: 1.125rem;
+    letter-spacing: 0.5px;
+  }
+
+  .title {
+    margin: 0.625rem 0;
+    letter-spacing: 0.25px;
+    font-size: 1.25rem;
+    color: $color-black-3;
+  }
+
+  .othersInfo {
+    color: $color-grey-3;
+    font-size: 0.875rem;
+
+    span {
+      border-right: 1px solid $color-grey-3;
+      margin-right: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    span:last-child {
+      border-right: none;
+    }
+  }
+
+  .blogDetails {
+    color: $color-grey-4;
+    font-size: 0.938rem;
+    border-top: 1px solid $color-grey-2;
+
+    margin: 1.563rem 0 0 0;
+    padding: 1.563rem 0 0 0;
+    line-height: 1.875rem;
+  }
+}

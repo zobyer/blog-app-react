@@ -1,0 +1,25 @@
+@use "../../../../styles/base.scss" as *;
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.25rem;
+
+  .leftContainer {
+    width: 60%;
+  }
+
+  .rightContainer {
+    width: 30%;
+
+    .searchTextField {
+      padding-left: 0.938rem;
+      font-size: 0.813rem;
+      font-weight: 500;
+    }
+
+    .searchTextField::placeholder {
+      color: $color-grey-4;
+    }
+  }
+}
