@@ -5,9 +5,11 @@ import { TextInputField as TextInputFieldProps } from "./index.type";
 
 const TextInputFields: React.FC<TextInputFieldProps> = (props) => {
   const {
-    placeholder = "type to search",
+    placeholder = "",
     styledClassName = "",
     isLabelVisible = false,
+    register,
+    error,
   } = props;
 
   return (
@@ -18,7 +20,10 @@ const TextInputFields: React.FC<TextInputFieldProps> = (props) => {
         id="textInputField"
         className={`${styledClassName} ${Styles.textInput}`}
         placeholder={placeholder}
+        {...register}
       />
+
+      {error && <p className={Styles.errorMessage}>{error.message}</p>}
     </>
   );
 };
