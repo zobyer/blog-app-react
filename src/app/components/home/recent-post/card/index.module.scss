@@ -1,0 +1,22 @@
+@use "../../../../../styles/base.scss" as *;
+
+.container {
+  padding: 0.938rem 0;
+  border-top: 1px solid $color-grey-2;
+
+  .title {
+    color: $color-black-3;
+    font-size: 1.188rem;
+    line-height: 1.875rem;
+    transition: all 0.3s;
+  }
+
+  .title:hover {
+    color: $color-orange-1;
+  }
+
+  .date {
+    color: $color-grey-3;
+    font-size: 0.875rem;
+  }
+}

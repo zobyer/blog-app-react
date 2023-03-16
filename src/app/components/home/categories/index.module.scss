@@ -1,0 +1,25 @@
+@use "../../../../styles/base.scss" as *;
+
+.title {
+  color: $color-black-3;
+  font-size: 1.188rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.938rem;
+}
+
+.categories {
+  list-style: none;
+  padding-top: 1.563rem;
+  border-top: 1px solid $color-grey-2;
+
+  li {
+    margin-bottom: 0.938rem;
+
+    .categoryRedirectLink {
+      color: $color-black-3;
+      font-size: 0.938rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+}
