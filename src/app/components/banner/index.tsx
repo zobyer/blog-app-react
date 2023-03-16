@@ -1,8 +1,9 @@
 import React from "react";
 
 import Styles from "./index.module.scss";
+import { Banner as BannerProps } from "./index.type";
 
-const Banner = () => {
+const Banner: React.FC<BannerProps> = ({ bgImageUrl, title, heading }) => {
   return (
     <div
       className={`${Styles.banner}`}
@@ -12,10 +13,8 @@ const Banner = () => {
       }}
     >
       <div className={Styles.textContaienr}>
-        <h4 className={`text-uppercase ${Styles.title}`}>contact us</h4>
-        <h2 className={`text-uppercase ${Styles.heading}`}>
-          LET’S STAY IN TOUCH!
-        </h2>
+        <h4 className={`text-uppercase ${Styles.title}`}>{title}</h4>
+        <h2 className={`text-uppercase ${Styles.heading}`}>{heading}</h2>
       </div>
     </div>
   );
