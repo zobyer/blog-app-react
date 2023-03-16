@@ -1,0 +1,16 @@
+@use "../../../../styles/base.scss" as *;
+
+.title {
+  color: $color-black-3;
+  font-size: 1.188rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.938rem;
+  border-bottom: 1px solid $color-grey-2;
+}
+
+.wrapper {
+  margin-top: 1.563rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

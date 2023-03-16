@@ -21,5 +21,9 @@
       font-weight: 700;
       text-transform: capitalize;
     }
+
+    .categoryRedirectLink:hover {
+      color: $color-orange-1;
+    }
   }
 }

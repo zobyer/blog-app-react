@@ -1,0 +1,12 @@
+@use "../../../../../styles/base.scss" as *;
+
+.card {
+  border: 1px solid $color-grey-2;
+  color: $color-grey-3;
+  padding: 0.625rem 1.125rem;
+}
+
+.card:hover {
+  background-color: $color-orange-1;
+  color: $color-white-1;
+}
