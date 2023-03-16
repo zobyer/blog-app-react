@@ -1,5 +1,5 @@
 import Banner from "app/components/banner";
-import RectangleBlogCard from "app/components/card/blog/rectangle";
+import ContactUsForm from "app/components/contact-us";
 import SearchPostForm from "app/components/form/post-search";
 import CategoriesContainer from "app/components/home/categories";
 import RecentPostContainer from "app/components/home/recent-post";
@@ -7,29 +7,27 @@ import TagCloud from "app/components/home/tag-cloud";
 import LayOut from "app/components/layout";
 import React from "react";
 
-import Styles from "styles/PostDetails.module.scss";
+import Styles from "styles/ContactUs.module.scss";
 
-const PostDetails = () => {
+const ContactUs = () => {
   return (
     <div>
       <LayOut>
         <Banner
           bgImageUrl="assets/images/heading-bg.jpg"
-          title="Post details"
+          title="contact us"
           heading="LET’S STAY IN tOUCH!"
         />
-        <div className={`container mx-auto`}>
-          <div className={Styles.wrapper}>
-            <div className={Styles.left}>
-              <RectangleBlogCard />
-            </div>
 
-            <div className={Styles.right}>
-              <SearchPostForm />
-              <RecentPostContainer />
-              <CategoriesContainer />
-              <TagCloud />
-            </div>
+        <div className={`container mx-auto ${Styles.wrapper}`}>
+          <div className={Styles.left}>
+            <ContactUsForm />
+          </div>
+          <div className={Styles.right}>
+            <SearchPostForm />
+            <RecentPostContainer />
+            <CategoriesContainer />
+            <TagCloud />
           </div>
         </div>
       </LayOut>
@@ -37,4 +35,4 @@ const PostDetails = () => {
   );
 };
 
-export default PostDetails;
+export default ContactUs;

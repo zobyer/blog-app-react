@@ -1,0 +1,11 @@
+@use "../../../styles/base.scss" as *;
+
+.title {
+  margin-bottom: 1.563rem;
+  padding-bottom: 0.938rem;
+  color: $color-black-3;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 1.125rem;
+  border-bottom: 1px solid $color-grey-2;
+}

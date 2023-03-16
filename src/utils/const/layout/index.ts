@@ -1,7 +1,7 @@
 export const menus = [
   { id: 1, name: "home", redirectLink: "/" },
   { id: 2, name: "about us", redirectLink: "/about" },
-  { id: 3, name: "post details", redirectLink: "/" },
+  { id: 3, name: "post details", redirectLink: "/post-details/2" },
   { id: 4, name: "contact us", redirectLink: "/" },
 ];
 
