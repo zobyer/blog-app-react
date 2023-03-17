@@ -8,7 +8,7 @@ const Banner: React.FC<BannerProps> = ({ bgImageUrl, title, heading }) => {
     <div
       className={`${Styles.banner}`}
       style={{
-        backgroundImage: `url(${require("assets/images/heading-bg.jpg")})`,
+        backgroundImage: `url(${require("assets/images/" + bgImageUrl)})`,
         aspectRatio: 166 / 29,
       }}
     >

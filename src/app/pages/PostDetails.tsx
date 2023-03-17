@@ -14,7 +14,7 @@ const PostDetails = () => {
     <div>
       <LayOut>
         <Banner
-          bgImageUrl="assets/images/heading-bg.jpg"
+          bgImageUrl="heading-bg.jpg"
           title="Post details"
           heading="LET’S STAY IN tOUCH!"
         />
