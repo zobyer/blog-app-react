@@ -1,4 +1,5 @@
 import React from "react";
+import { blogs } from "utils/const/api/blogs";
 import RecentPostCard from "./card";
 import Styles from "./index.module.scss";
 
@@ -7,8 +8,9 @@ const RecentPostContainer = () => {
     <div>
       <h2 className={`text-uppercase ${Styles.heading}`}>Recent Posts</h2>
 
-      <RecentPostCard />
-      <RecentPostCard />
+      {blogs.map((blog) => (
+        <RecentPostCard key={blog.id} title={blog.title} date={blog.date} />
+      ))}
     </div>
   );
 };

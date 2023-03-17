@@ -5,6 +5,7 @@ import { Blog as BlogProps } from "./index.type";
 const BlogCard: React.FC<BlogProps> = ({
   category,
   title,
+  imageUrl,
   postedBy,
   date,
   noOfComments,
@@ -12,7 +13,7 @@ const BlogCard: React.FC<BlogProps> = ({
   return (
     <div
       style={{
-        backgroundImage: `url(${require("assets/images/banner-item-01.jpg")})`,
+        backgroundImage: `url(${require("assets/images/" + imageUrl)})`,
         backgroundSize: "cover",
       }}
       className={Styles.blogCard}

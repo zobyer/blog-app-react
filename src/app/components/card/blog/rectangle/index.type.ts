@@ -1,8 +1,8 @@
 export interface Blog {
   category: string;
   title: string;
-  postedBy: string;
-  imageUrl: string;
+  userType: string;
   date: string;
   noOfComments: number;
+  details: string;
 }

@@ -21,6 +21,7 @@ const HomePageContainer = () => {
               key={blog.id}
               category={blog.category}
               title={blog.title}
+              imageUrl={blog.imagePath}
               postedBy={blog.postedBy}
               date={blog.date}
               noOfComments={blog.noOfComments}
@@ -31,12 +32,18 @@ const HomePageContainer = () => {
 
       <div className={`mx-auto container ${Styles.wrapper}`}>
         <div className={Styles.leftContainer}>
-          <div className={Styles.marginBottom}>
-            <RectangleBlogCard />
-          </div>
-          <div>
-            <RectangleBlogCard />
-          </div>
+          {blogs.map((blog) => (
+            <div className={Styles.marginBottom} key={blog.id}>
+              <RectangleBlogCard
+                category={blog.category}
+                title={blog.title}
+                userType="admin"
+                date=""
+                noOfComments={blog.noOfComments}
+                details={blog.description}
+              />
+            </div>
+          ))}
         </div>
         <div className={Styles.rightContainer}>
           <SearchPostForm />

@@ -21,7 +21,14 @@ const PostDetails = () => {
         <div className={`container mx-auto`}>
           <div className={Styles.wrapper}>
             <div className={Styles.left}>
-              <RectangleBlogCard />
+              <RectangleBlogCard
+                category=""
+                title=""
+                userType="admin"
+                date=""
+                noOfComments={2}
+                details=""
+              />
             </div>
 
             <div className={Styles.right}>
