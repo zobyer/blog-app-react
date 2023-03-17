@@ -1,7 +1,10 @@
+@use "../styles/base.scss" as *;
+
 .wrapper {
   margin-top: 6rem;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 
   .left {
     width: 60%;
@@ -9,5 +12,20 @@
 
   .right {
     height: 30%;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .wrapper {
+    flex-direction: column;
+    padding: 0 1rem;
+
+    .left {
+      width: 100%;
+    }
+
+    .right {
+      width: 100%;
+    }
   }
 }
