@@ -12,10 +12,6 @@ import {
 import { searchpostschema } from "utils/schema/post";
 
 const SearchPostForm: React.FC<SearchFormProps> = ({ onFormSubmit }) => {
-  const onSearchPostSubmit = ({ searchKey }: SearchPost) => {
-    onFormSubmit;
-  };
-
   const {
     register,
     handleSubmit,
