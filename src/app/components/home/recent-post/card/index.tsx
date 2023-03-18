@@ -4,9 +4,9 @@ import React from "react";
 import Styles from "./index.module.scss";
 import { RecentPost } from "./index.type";
 
-const RecentPostCard: React.FC<RecentPost> = ({ title, date }) => {
+const RecentPostCard: React.FC<RecentPost> = ({ title, date, slug }) => {
   return (
-    <RedirectLink path="/">
+    <RedirectLink path={`/post-details/${slug}`}>
       <div className={Styles.container}>
         <h2 className={Styles.title}>{title} </h2>
 

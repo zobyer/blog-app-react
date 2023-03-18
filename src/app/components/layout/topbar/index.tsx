@@ -19,7 +19,7 @@ const TopBar: React.FC = () => {
   return (
     <nav className={Styles.navbar}>
       <div className={`container relative ${Styles.container}`}>
-        <RedirectLink path="">
+        <RedirectLink path="/">
           <AppHeadingName />
         </RedirectLink>
         <div>

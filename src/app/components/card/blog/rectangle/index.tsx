@@ -1,4 +1,3 @@
-import RedirectLink from "app/components/redirect-link";
 import React from "react";
 
 import Styles from "./index.module.scss";
@@ -22,10 +21,10 @@ const RectangleBlogCard: React.FC<BlogProps> = ({
       />
 
       <div className={Styles.informationContainer}>
-        <RedirectLink path="/">
+        <div>
           <h4 className={`text-uppercase ${Styles.category}`}>{category}</h4>
           <h3 className={Styles.title}>{title}</h3>
-        </RedirectLink>
+        </div>
 
         <p className={Styles.othersInfo}>
           <span>{userType}</span>

@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 
 import Banner from "app/components/banner";
 import RectangleBlogCard from "app/components/card/blog/rectangle";
-import SearchPostForm from "app/components/form/post-search";
 import CategoriesContainer from "app/components/home/categories";
 import RecentPostContainer from "app/components/home/recent-post";
 import TagCloud from "app/components/home/tag-cloud";
@@ -54,11 +53,11 @@ const PostDetails = () => {
               </div>
 
               <div className={Styles.right}>
-                <SearchPostForm
+                {/* <SearchPostForm
                   onFormSubmit={() => {
                     console.log("called");
                   }}
-                />
+                /> */}
                 <RecentPostContainer />
                 <CategoriesContainer />
                 <TagCloud />
