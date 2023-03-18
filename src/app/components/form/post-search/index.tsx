@@ -4,12 +4,16 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import TextInputFields from "app/components/input-fields/text";
 import Styles from "./index.module.scss";
-import { SearchPostsForm, SearchPost } from "./index.type";
+import {
+  SearchPostsForm,
+  SearchPost,
+  searchForm as SearchFormProps,
+} from "./index.type";
 import { searchpostschema } from "utils/schema/post";
 
-const SearchPostForm = () => {
+const SearchPostForm: React.FC<SearchFormProps> = ({ onFormSubmit }) => {
   const onSearchPostSubmit = ({ searchKey }: SearchPost) => {
-    console.log("called", searchKey);
+    onFormSubmit;
   };
 
   const {
@@ -22,7 +26,7 @@ const SearchPostForm = () => {
   });
 
   return (
-    <form onSubmit={handleSubmit(onSearchPostSubmit)}>
+    <form onSubmit={handleSubmit(onFormSubmit)}>
       <TextInputFields
         placeholder="type to search"
         styledClassName={`text-uppercase ${Styles.searchTextField}`}

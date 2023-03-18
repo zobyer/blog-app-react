@@ -1,6 +1,5 @@
 import Banner from "app/components/banner";
 import ContactUsForm from "app/components/contact-us";
-import SearchPostForm from "app/components/form/post-search";
 import CategoriesContainer from "app/components/home/categories";
 import RecentPostContainer from "app/components/home/recent-post";
 import TagCloud from "app/components/home/tag-cloud";
@@ -24,7 +23,6 @@ const ContactUs = () => {
             <ContactUsForm />
           </div>
           <div className={Styles.right}>
-            <SearchPostForm />
             <RecentPostContainer />
             <CategoriesContainer />
             <TagCloud />

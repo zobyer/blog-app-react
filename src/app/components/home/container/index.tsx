@@ -10,13 +10,21 @@ import RedirectLink from "app/components/redirect-link";
 import BlogCard from "app/components/card/blog/square";
 import { blogs } from "utils/const/api/blogs";
 import TagCloud from "../tag-cloud";
+import { SearchPost } from "app/components/form/post-search/index.type";
+import { useBlogSearch } from "app/hooks/useBlogSearch";
 
 const HomePageContainer = () => {
+  const { filteredBlogs, searchFromBlogs } = useBlogSearch();
+
+  const searchBlog = ({ searchKey }: SearchPost) => {
+    searchFromBlogs(searchKey);
+  };
+
   return (
     <>
       <MultiCardCarousel>
         {blogs.map((blog) => (
-          <RedirectLink key={blog.id} path={blog.slug}>
+          <RedirectLink key={blog.id} path={`post-details/${blog.slug}`}>
             <BlogCard
               key={blog.id}
               category={blog.category}
@@ -32,21 +40,23 @@ const HomePageContainer = () => {
 
       <div className={`mx-auto container ${Styles.wrapper}`}>
         <div className={Styles.leftContainer}>
-          {blogs.map((blog) => (
-            <div className={Styles.marginBottom} key={blog.id}>
-              <RectangleBlogCard
-                category={blog.category}
-                title={blog.title}
-                userType="admin"
-                date=""
-                noOfComments={blog.noOfComments}
-                details={blog.description}
-              />
-            </div>
+          {filteredBlogs.map((blog) => (
+            <RedirectLink key={blog.id} path={`post-details/${blog.slug}`}>
+              <div className={Styles.marginBottom} key={blog.id}>
+                <RectangleBlogCard
+                  category={blog.category}
+                  title={blog.title}
+                  userType="admin"
+                  date=""
+                  noOfComments={blog.noOfComments}
+                  details={blog.description}
+                />
+              </div>
+            </RedirectLink>
           ))}
         </div>
         <div className={Styles.rightContainer}>
-          <SearchPostForm />
+          <SearchPostForm onFormSubmit={searchBlog} />
           <RecentPostContainer />
           <CategoriesContainer />
           <TagCloud />

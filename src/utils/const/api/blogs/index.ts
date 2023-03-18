@@ -9,7 +9,7 @@ export const blogs = [
     postedBy: "Admin",
     date: "May 12, 2022",
     noOfComments: 5,
-    slug: "/tech",
+    slug: 0,
   },
   {
     id: "blog#2",
@@ -21,7 +21,7 @@ export const blogs = [
     postedBy: "Admin",
     date: "May 12, 2022",
     noOfComments: 2,
-    slug: "/",
+    slug: 1,
   },
   {
     id: "blog#3",
@@ -33,7 +33,7 @@ export const blogs = [
     postedBy: "Admin",
     date: "May 12, 2022",
     noOfComments: 8,
-    slug: "/",
+    slug: 2,
   },
   {
     id: "blog#4",
@@ -45,7 +45,7 @@ export const blogs = [
     postedBy: "Admin",
     date: "May 12, 2022",
     noOfComments: 22,
-    slug: "/",
+    slug: 3,
   },
 ];
 
