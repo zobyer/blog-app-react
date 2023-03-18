@@ -4,11 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import TextInputFields from "app/components/input-fields/text";
 import Styles from "./index.module.scss";
-import {
-  SearchPostsForm,
-  SearchPost,
-  searchForm as SearchFormProps,
-} from "./index.type";
+import { SearchPostsForm, searchForm as SearchFormProps } from "./index.type";
 import { searchpostschema } from "utils/schema/post";
 
 const SearchPostForm: React.FC<SearchFormProps> = ({ onFormSubmit }) => {
